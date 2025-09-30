@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package apilotto_sample;
+
+// import "google/protobuf/timestamp.proto";
+
+option go_package = "aplilotto/apilotto_sample;api";
+option java_multiple_files = true;
+option java_package = "com.apilot.lottoapiserver.protobuf.sample";
+
+service SampleService {
+    // GET /v1/product/awarded_period () ListPeriodResponse
+}
+
+message SampleProduct {
+  int64 id =1;
+  int64 productId = 2;
+  string  name =3;
+  string value = 4;
+  bool enabled = 5;
+}
