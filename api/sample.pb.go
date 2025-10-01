@@ -23,7 +23,7 @@ const (
 
 type SampleProduct struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Id            int64                  `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
+	Sku           int64                  `protobuf:"varint,1,opt,name=sku,proto3" json:"sku,omitempty"`
 	ProductId     int64                  `protobuf:"varint,2,opt,name=productId,proto3" json:"productId,omitempty"`
 	Name          string                 `protobuf:"bytes,3,opt,name=name,proto3" json:"name,omitempty"`
 	Value         string                 `protobuf:"bytes,4,opt,name=value,proto3" json:"value,omitempty"`
@@ -62,9 +62,9 @@ func (*SampleProduct) Descriptor() ([]byte, []int) {
 	return file_sample_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *SampleProduct) GetId() int64 {
+func (x *SampleProduct) GetSku() int64 {
 	if x != nil {
-		return x.Id
+		return x.Sku
 	}
 	return 0
 }
@@ -101,9 +101,9 @@ var File_sample_proto protoreflect.FileDescriptor
 
 const file_sample_proto_rawDesc = "" +
 	"\n" +
-	"\fsample.proto\x12\x0fapilotto_sample\"\x81\x01\n" +
-	"\rSampleProduct\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\x03R\x02id\x12\x1c\n" +
+	"\fsample.proto\x12\x0fapilotto_sample\"\x83\x01\n" +
+	"\rSampleProduct\x12\x10\n" +
+	"\x03sku\x18\x01 \x01(\x03R\x03sku\x12\x1c\n" +
 	"\tproductId\x18\x02 \x01(\x03R\tproductId\x12\x12\n" +
 	"\x04name\x18\x03 \x01(\tR\x04name\x12\x14\n" +
 	"\x05value\x18\x04 \x01(\tR\x05value\x12\x18\n" +
