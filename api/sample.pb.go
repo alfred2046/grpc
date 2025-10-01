@@ -25,7 +25,7 @@ type SampleProduct struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Sku           int64                  `protobuf:"varint,1,opt,name=sku,proto3" json:"sku,omitempty"`
 	ProductId     int64                  `protobuf:"varint,2,opt,name=productId,proto3" json:"productId,omitempty"`
-	Name          string                 `protobuf:"bytes,3,opt,name=name,proto3" json:"name,omitempty"`
+	Prodname      string                 `protobuf:"bytes,3,opt,name=prodname,proto3" json:"prodname,omitempty"`
 	Value         string                 `protobuf:"bytes,4,opt,name=value,proto3" json:"value,omitempty"`
 	Enabled       bool                   `protobuf:"varint,5,opt,name=enabled,proto3" json:"enabled,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -76,9 +76,9 @@ func (x *SampleProduct) GetProductId() int64 {
 	return 0
 }
 
-func (x *SampleProduct) GetName() string {
+func (x *SampleProduct) GetProdname() string {
 	if x != nil {
-		return x.Name
+		return x.Prodname
 	}
 	return ""
 }
@@ -101,11 +101,11 @@ var File_sample_proto protoreflect.FileDescriptor
 
 const file_sample_proto_rawDesc = "" +
 	"\n" +
-	"\fsample.proto\x12\x0fapilotto_sample\"\x83\x01\n" +
+	"\fsample.proto\x12\x0fapilotto_sample\"\x8b\x01\n" +
 	"\rSampleProduct\x12\x10\n" +
 	"\x03sku\x18\x01 \x01(\x03R\x03sku\x12\x1c\n" +
-	"\tproductId\x18\x02 \x01(\x03R\tproductId\x12\x12\n" +
-	"\x04name\x18\x03 \x01(\tR\x04name\x12\x14\n" +
+	"\tproductId\x18\x02 \x01(\x03R\tproductId\x12\x1a\n" +
+	"\bprodname\x18\x03 \x01(\tR\bprodname\x12\x14\n" +
 	"\x05value\x18\x04 \x01(\tR\x05value\x12\x18\n" +
 	"\aenabled\x18\x05 \x01(\bR\aenabled2\x0f\n" +
 	"\rSampleServiceBL\n" +

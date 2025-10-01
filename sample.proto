@@ -15,7 +15,7 @@ service SampleService {
 message SampleProduct {
   int64 sku =1;
   int64 productId = 2;
-  string  name =3;
+  string  prodname =3;
   string value = 4;
   bool enabled = 5;
 }
